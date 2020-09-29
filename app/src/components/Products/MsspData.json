@@ -1,0 +1,2799 @@
+                        {
+  "categories" : [ {
+    "Workforce Identity Products" : [ {
+      "vendorName" : "Okta",
+      "solutionName" : "SSO",
+      "vendorCategory" : "SSO",
+      "tiers" : [ {
+        "name" : "SSO",
+        "price" : 2,
+        "period" : {
+          "unit" : 1,
+          "period" : "Month"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Okta Integration Network",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta ThreatInsight",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Desktop and mobile SSO (cloud & on-prem apps)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Basic multi-factor authentication (MFA)",
+            "tags" : [ "MFA" ]
+          }, {
+            "featureText" : "3rd party MFA integration",
+            "tags" : [ "MFA" ]
+          }, {
+            "featureText" : "Group and app access policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "RADIUS authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "PIV card authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "IdP discovery",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable user experience",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Custom org URLs",
+            "tags" : [ ]
+          }, {
+            "featureText" : "(e.g. company.com/login)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta sign-in widget",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Local language support",
+            "tags" : [ "Directory Service" ]
+          }, {
+            "featureText" : "Directory Integrations",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Unlimited integrations to AD & LDAP",
+            "tags" : [ "AD Integration", " Active Directory" ]
+          }, {
+            "featureText" : "Real-time reporting",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SIEM integration",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Integrated access management",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "Adaptive SSO",
+        "price" : 5,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Okta Integration Network",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta ThreatInsight",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Desktop and mobile SSO (cloud & on-prem apps)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Basic multi-factor authentication (MFA)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "3rd party MFA integration",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Group and app access policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "RADIUS authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "PIV card authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "IdP discovery",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable user experience",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Custom org URLs",
+            "tags" : [ ]
+          }, {
+            "featureText" : "(e.g. company.com/login)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta sign-in widget",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Local language support",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Directory Integrations",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Unlimited integrations to AD & LDAP",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Real-time reporting",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SIEM integration",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Contextual access management",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Location context",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Device context",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Network context",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Risk-based Authentication",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Integrated access management",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Okta",
+      "solutionName" : "MFA",
+      "vendorCategory" : "MFA",
+      "tiers" : [ {
+        "name" : "MFA",
+        "price" : 3,
+        "period" : {
+          "unit" : 1,
+          "period" : "Month"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Security questions",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Possession factors",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta Verify OTP",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta Verify Push",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Email as a factor",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SMS",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Voice",
+            "tags" : [ ]
+          }, {
+            "featureText" : "U2F",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Third-party factors ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Biometric factors ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Windows Hello",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Apple TouchID",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Contextual access management",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Risk-based Authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Network context",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Specified IP zones",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta ThreatInsight",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Multi-factor authentication",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "Adaptive MFA",
+        "price" : 6,
+        "period" : {
+          "unit" : 1,
+          "period" : "Month"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Security questions",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Possession factors",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta Verify OTP",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta Verify Push",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Email as a factor",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SMS",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Voice",
+            "tags" : [ ]
+          }, {
+            "featureText" : "U2F",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Third-party factors ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Biometric factors ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Windows Hello",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Apple TouchID",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Contextual access management",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Risk-based Authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Location context",
+            "tags" : [ ]
+          }, {
+            "featureText" : "New city, state, or country",
+            "tags" : [ ]
+          }, {
+            "featureText" : "New geo-location",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Impossible travel patterns",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Device context",
+            "tags" : [ ]
+          }, {
+            "featureText" : "New device",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Managed device ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Network context",
+            "tags" : [ ]
+          }, {
+            "featureText" : "New IP",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Specified IP zones",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Network anonymizers ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta ThreatInsight",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Multi-factor authentication",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Okta",
+      "solutionName" : "Directory Services",
+      "vendorCategory" : "Universal Directory",
+      "tiers" : [ {
+        "name" : "Universal Directory",
+        "price" : 2,
+        "period" : {
+          "unit" : 1,
+          "period" : "Month"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Cloud directory",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Unlimited directory integrations (AD/LDAP & apps)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Unlimited custom user attributes and fields",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Custom mapping and transformation",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Cloud-based LDAP authentication",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Universal Directory",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Okta",
+      "solutionName" : "User Life Cycle Managememnt",
+      "vendorCategory" : "Life Cycle Managememnt",
+      "tiers" : [ {
+        "name" : "Life Cycle Managememnt",
+        "price" : 4,
+        "period" : {
+          "unit" : 1,
+          "period" : "Month"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Auto provisioning / deprovisioning for OIN apps",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Directory integration with AD or LDAP",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Complete AD synchronization for Office 365",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Application and directory integrations",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "App access and provisioning tied to lifecycle states",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Create and deactivate accounts in applications",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Manage entitlements",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Group discovery, matching, push, and updates",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Group discovery, matching, push, and updates",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Identity lifecycle management",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Access request workflows",
+            "tags" : [ ]
+          } ],
+          "featureText" : "IT authorization",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Access audit reports",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Recent unassignments report",
+            "tags" : [ ]
+          }, {
+            "featureText" : "APIs for full customization",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Real-time reporting",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Customizable directory for users groups and devices",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Manage lifecycle states",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Attribute mapping and transformation",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Universal Directory ",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "Advanced LifeCycle Management",
+        "price" : 6,
+        "period" : {
+          "unit" : 1,
+          "period" : "Month"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Auto provisioning / deprovisioning for OIN apps",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Directory integration with AD or LDAP",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Complete AD synchronization for Office 365",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Application and directory integrations",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "App access and provisioning tied to lifecycle states",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Create and deactivate accounts in applications",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Manage entitlements",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Group discovery, matching, push, and updates",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Automations ",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Identity lifecycle management",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Graphical interface for building identity processes",
+            "tags" : [ ]
+          }, {
+            "featureText" : "App connectors that do more than CRUD of accounts",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Conditional & branching logic without code",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Flexible triggers (e.g. from Okta, other apps, or scheduled)",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Workflows",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Access request workflows",
+            "tags" : [ ]
+          } ],
+          "featureText" : "IT authorization",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Access audit reports",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Recent unassignments report",
+            "tags" : [ ]
+          }, {
+            "featureText" : "APIs for full customization",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Real-time reporting",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Customizable directory for users groups and devices",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Manage lifecycle states",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Attribute mapping and transformation",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Built-in standards-based provisioning (SCIM)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "On-prem provisioning SDK",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Universal Directory ",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "Advanced Masterin Add-on",
+        "price" : 2,
+        "period" : {
+          "unit" : 1,
+          "period" : "Month"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "HR-driven IT provisioning (e.g. Workday and UltiPro)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Mastering from select OIN apps (e.g. Salesforce and GSuite)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Mastering from on-premises apps via on-premises provisioning agent",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Mastering from CSV Directory",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Advanced Mastering",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Okta",
+      "solutionName" : "API Access Management",
+      "vendorCategory" : "API Access Management",
+      "tiers" : [ {
+        "name" : "API Access Management",
+        "price" : 2,
+        "period" : {
+          "unit" : 1,
+          "period" : "Month"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Okta ThreatInsight",
+            "tags" : [ ]
+          }, {
+            "featureText" : "OAuth 2.0 and OIDC compliant",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Dynamic client registration",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Central access and authorization management",
+            "tags" : [ ]
+          }, {
+            "featureText" : "User consent",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable scopes and claims",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable authorization servers",
+            "tags" : [ ]
+          } ],
+          "featureText" : "API Access Management",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Okta",
+      "solutionName" : "Server Access",
+      "vendorCategory" : "Advanced Server Access",
+      "tiers" : [ {
+        "name" : "Advanced server access",
+        "price" : 15,
+        "period" : {
+          "unit" : 1,
+          "period" : "Month"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Supports mixed environments: AWS, Azure, GCP, and on-premises",
+            "tags" : [ ]
+          }, {
+            "featureText" : "End-to-end lifecycle management of local Linux and Windows machine accounts",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Seamless SSO and MFA authentication built into your SSH and RDP workflows",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Backed by a Programmable CA that mints just-in-time, single-use client certificates",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Client Application for local SSH and RDP integrations, and dynamic device binding",
+            "tags" : [ ]
+          }, {
+            "featureText" : "API allows for custom authentication and management workflows",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Advanced server access",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Okta",
+      "solutionName" : "Access Gateway",
+      "vendorCategory" : "Access Gateway",
+      "tiers" : [ {
+        "name" : "Access Gateway",
+        "price" : 3,
+        "period" : {
+          "unit" : 1,
+          "period" : "Month"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Okta Single Sign-on and MFA app integrations",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Number of app integrations - Unlimited",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Header-based applications",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Kerberos/IWA applications",
+            "tags" : [ ]
+          }, {
+            "featureText" : "On-premise applications – such as Oracle E-Business Suite, PeopleSoft, and Sharepoint",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Custom web apps, pages, and web portals",
+            "tags" : [ ]
+          }, {
+            "featureText" : "On-premise application policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Number of policies - Unlimited",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Application policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Custom header variables",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Authorization policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Infrastructure",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Access Gateway servers - Unlimited",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Datacenters - Unlimited",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Networks and hosts - Unlimited",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Access Gateway",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "IDAPTIVE",
+      "solutionName" : "SSO",
+      "vendorCategory" : "Single Sign On",
+      "tiers" : [ {
+        "name" : "Standard SSO",
+        "price" : 24,
+        "period" : {
+          "unit" : 1,
+          "period" : "Year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Idaptive App Catalog",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Desktop SSO ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Role-based access policy ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "B2B federation ",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Access management",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "MFA using OATH tokens and security questions",
+            "tags" : [ ]
+          }, {
+            "featureText" : "MFA using a third-party RADIUS server",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Basic web multi-factor authentication (MFA)",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Cloud Directory ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Integrations to AD, LDAP, and Google Cloud Directory ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Custom user attributes",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Directory APIs",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Directory services",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Browser-based SSO portal ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Idaptive mobile app ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Self-service password update and reset for AD accounts",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Self-service AD account unlock",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Self-service AD profile updates",
+            "tags" : [ ]
+          } ],
+          "featureText" : "User self-service",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Administrator reports ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SIEM integration",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Reporting",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "Adaptive SSO",
+        "price" : 48,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Idaptive App Catalog",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Desktop SSO ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Role-based access policy ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "B2B federation ",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Access management",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "MFA using OATH tokens and security questions",
+            "tags" : [ ]
+          }, {
+            "featureText" : "MFA using a third-party RADIUS server",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Basic web multi-factor authentication (MFA)",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Cloud Directory ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Integrations to AD, LDAP, and Google Cloud Directory ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Custom user attributes",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Directory APIs",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Directory services",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Browser-based SSO portal ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Idaptive mobile app ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Self-service password update and reset for AD accounts",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Self-service AD account unlock",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Self-service AD profile updates",
+            "tags" : [ ]
+          } ],
+          "featureText" : "User self-service",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Administrator reports ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SIEM integration",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Reporting",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Location context",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Device context",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Network context",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Time-based context",
+            "tags" : [ ]
+          }, {
+            "featureText" : "User behavior risk context",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Contextual access management",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "IDAPTIVE",
+      "solutionName" : "App Gateway",
+      "vendorCategory" : "Add-Ons",
+      "tiers" : [ {
+        "name" : "App Gateway add-on",
+        "price" : 42,
+        "period" : {
+          "unit" : 1,
+          "period" : "Year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "App Gateway add-on",
+            "tags" : [ ]
+          } ],
+          "featureText" : "App Gateway add-on",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "Adaptive Sso",
+        "price" : 60,
+        "period" : {
+          "unit" : 1,
+          "period" : "Year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Workstation (PC and Mac) login",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Virtual desktop login",
+            "tags" : [ ]
+          }, {
+            "featureText" : "VPN login",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Web apps login",
+            "tags" : [ ]
+          }, {
+            "featureText" : "RADIUS server",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Third-party IDPs ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "On-prem web app MFA (requires SSO and App Gateway add-on) ",
+            "tags" : [ ]
+          } ],
+          "featureText" : "MFA use cases supported",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Cloud Directory",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Integrations to AD, LDAP, and Google Cloud Directory",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Custom user attributes ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Directory APIs ",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Directory services",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Email OTP",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Physical FIDO U2F-based keys",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Hardware OTP Tokens",
+            "tags" : [ ]
+          }, {
+            "featureText" : "KBA(Security Questions) ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "OATH-based mobile authenticator apps",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Mobile push notifications ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Derived credentials",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Smart cards ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Offline OTP",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SMS-based OTP",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Phone call ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Wearable as a token",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Supported factors",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Location context",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Device context ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Time-based context",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Network context",
+            "tags" : [ ]
+          }, {
+            "featureText" : "User behavior risk context",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Contextual access management",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Rich insights ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Incident investigation",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Risk modeling",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Response orchestration and automation",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Third-party threat ingestion",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Identity intelligence",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "IDAPTIVE",
+      "solutionName" : "Lifecycle Management",
+      "vendorCategory" : "Lifecycle Management",
+      "tiers" : [ {
+        "name" : "Standard LCM",
+        "price" : 42,
+        "period" : {
+          "unit" : 1,
+          "period" : "Year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Pre-integrated app provisioning and deprovisioning",
+            "tags" : [ ]
+          }, {
+            "featureText" : "AD, LDAP, Google Cloud Directory, and Idaptive Cloud Directory synchronization ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "AD synchronization and license management for Office 365 ",
+            "tags" : [ ]
+          } ],
+          "featureText" : "App access provisioning",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Self-service app request and approval",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Create, update, and deactivate accounts in applications ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Manage entitlements ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Reporting ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SIEM integration",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Governance and compliance",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "Advanced LCM",
+        "price" : 84,
+        "period" : {
+          "unit" : 1,
+          "period" : "Year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Pre-integrated app provisioning and deprovisioning",
+            "tags" : [ ]
+          }, {
+            "featureText" : "AD, LDAP, Google Cloud Directory, and Idaptive Cloud Directory synchronization ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "AD synchronization and license management for Office 365 ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Governance and compliance",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Self-service app request and approval",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Create, update, and deactivate accounts in applications ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Manage entitlements ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Reporting ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SIEM integration",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Inbound Provisioning",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Workday ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SAP SuccessFactors",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Bamboo HR ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Ultimate Software's UltiPro",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Custom provisioning",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SCIM-based provisioning ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SCIM server",
+            "tags" : [ ]
+          } ],
+          "featureText" : "App access provisioning",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "IDAPTIVE",
+      "solutionName" : "MDM ",
+      "vendorCategory" : "Mobile Devices Management",
+      "tiers" : [ {
+        "name" : "Device Context",
+        "price" : 24,
+        "period" : {
+          "unit" : 1,
+          "period" : "Year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Detect and block rooted or jailbroken devices",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Automated certificate management",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Device location ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Remote enable or disable SSO",
+            "tags" : [ ]
+          }, {
+            "featureText" : "BYOD self-service enrollment",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Mobile access management",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "Device Security",
+        "price" : 108,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Detect and block rooted or jailbroken devices",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Automated certificate management",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Device location ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Remote enable or disable SSO",
+            "tags" : [ ]
+          }, {
+            "featureText" : "BYOD self-service enrollment",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Device management",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Remote lock",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Remote wipe",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Proxy ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "VPN ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Security ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Passcode ",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Mobile access management",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "IDAPTIVE",
+      "solutionName" : "Mobile app management",
+      "vendorCategory" : "Add-on - Mobile App Managemnt",
+      "tiers" : [ {
+        "name" : "Mobile app management add-on",
+        "price" : 48,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Deploy, manage, and remove apps",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Deploy custom apps",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Deploy apps from managed Google Play store",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Control app updates",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Mobile app management add-on",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "IDAPTIVE",
+      "solutionName" : "Endpoint Management",
+      "vendorCategory" : "Endpoint Management",
+      "tiers" : [ {
+        "name" : "EndPoint context",
+        "price" : 24,
+        "period" : {
+          "unit" : 1,
+          "period" : "Year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Automated certificate management",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Device location",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Remote enable or disable SSO",
+            "tags" : [ ]
+          }, {
+            "featureText" : "BYOD self-service enrollment",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Self-service and automation",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "EndPoint Security",
+        "price" : 0,
+        "period" : {
+          "unit" : 120,
+          "period" : "Year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Automated certificate management",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Device location",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Remote enable or disable SSO",
+            "tags" : [ ]
+          }, {
+            "featureText" : "BYOD self-service enrollment",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Self-service and automation",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Remote lock",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Remote wipe",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Device management",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Security and privacy ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "WiFi settings ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "VPN settings ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "FileVault management",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Application restrictions ",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Preferences restrictions",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Media access",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Mac management",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "GLUU",
+      "solutionName" : "IAM",
+      "vendorCategory" : "Gluu",
+      "tiers" : [ {
+        "name" : "Gluu Platform",
+        "price" : 0,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Free and Fully functional",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Packages for Ubuntu, Red Hat, Centos and Debian",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Kurbenetes/ Helm deployment",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Test Drive with docket compose",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Community support",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Gluu Platform",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "Cluster Manager",
+        "price" : null,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "A deployment tool for creating highly available topologies using VMs",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Priced per VM",
+            "tags" : [ ]
+          }, {
+            "featureText" : "VIP support not included",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Cluster Manager",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "VIP Support",
+        "price" : 0,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "24 x 7 x 365",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Guaranteed response SLAs",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Live chat",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Access to Expert Services",
+            "tags" : [ ]
+          } ],
+          "featureText" : "VIP Support",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "PingFederate",
+      "solutionName" : "SSO",
+      "vendorCategory" : "Workforce 360 - Authentication and Single Sign-on",
+      "tiers" : [ {
+        "name" : "Authentication and Single Sign-on",
+        "price" : 5,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Federated authentication and single sign-on",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Standards-based signed assertions (tokens)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Authentication authority with unlimited, flexible policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Attribute aggregation from multiple directories on the fly",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Connections to all on-premises and cloud-based directories",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Unlimited integrations with any custom, on-premises, SaaS or cloud applications",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Identity federation across various SSO scenarios",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Federated Single Sign-on",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Native support for identity standards",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Connections to all on-premises and cloud-based directories",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Extensive pre-integrated application catalog",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Support for several 2FA and MFA solutions",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Smart card authentication integration (CAC, PIV, etc.)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Out-of-the-box integrations with existing WAM systems",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Extensive server integration kits",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Comprehensive authentication adapters and selectors",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Integrations with SIEM, online events streaming and reporting",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Integrated Access Management",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Consistent employee sign-on experience",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable one-click access application portal",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Identifier-first adapter for passwordless authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Self-service password reset capabilities",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Employee Experience",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Support for cloud, on-premises, and cross-domain deployments",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Automated, preconfigured deployment with Docker and Kubernetes",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Authentication to Microsoft Active Directory without cloud synchronization",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Simplified Architecture",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Authentication via administrator API",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Visibility into lifecycle and promotion of all clients/connections",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Centralized authentication and SSO portal and delegated app administration",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Extensive provisioning/deprovisioning capabilities (SCIM, JIT, etc)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SAS Type II-compliant data centers and 24/7/365 performance monitoring",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Ease of Management",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "PingFederate",
+      "solutionName" : "MFA",
+      "vendorCategory" : "Workforce 360 - Adaptive Multi-factor Authentication",
+      "tiers" : [ {
+        "name" : "Adaptive Multi-factor Authentication",
+        "price" : 5,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Mobile app with swipe, tap and OTP (SMS, voice, email)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "PIN-protected desktop app for Windows and Mac",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Push notifications for iOS and Android",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Fingerprint and facial recognition (Apple Touch ID and Face ID, Android Fingerprint)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Apple Watch tap notifications",
+            "tags" : [ ]
+          }, {
+            "featureText" : "FIDO2-certified passwordless web authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Third-party authenticators and security keys",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Offline authentication capabilities",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Bring your own Twilio account (SMS and voice messages)",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Diverse Authentication Methods",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Adaptive authentication policies (location, IP address, geofencing, etc.)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "MFA bypassing based on trusted networks and locations",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Device pairing requirements (device lock, rooted/jailbroken, etc.)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Intelligent geovelocity detection (impossible travel times)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Intelligent IP reputation scoring for malicious activity",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Support for cryptographically strong session maintenance",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Role-based entitlements and web-based access abilities",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Group- and application-level access policies",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Context for Intelligent Authentication",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Mobile device managers (MDMs)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "VPN/RADIUS, AD FS, Windows Login, Linus/Unix SSH and custom APIs",
+            "tags" : [ ]
+          }, {
+            "featureText" : "On-premises, private cloud and SaaS applications",
+            "tags" : [ ]
+          } ],
+          "featureText" : "MFA That Integrates Everywhere",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "User self-service password resets",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Self-service device management (primary and secondary devices)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Real-time authentication method/device selection",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Backup authentication with user profile information",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Brandable user experience (mobile app, notifications, registration screens, etc.)",
+            "tags" : [ ]
+          } ],
+          "featureText" : "User Experience",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Dashboards, reporting and audit trails",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Detailed authentication event reporting",
+            "tags" : [ ]
+          }, {
+            "featureText" : "End user self-service capabilities",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Block/unblock devices, bypass authentications, remove/unpair devices and more",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Manage users via admin UI and APIs",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Delegate admin roles",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Multi-language support and local settings",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Administrative bypass capability",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Ease of Management",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "PingFederate",
+      "solutionName" : "Adaptive Access Security",
+      "vendorCategory" : "Adaptive Access Security",
+      "tiers" : [ {
+        "name" : "Adaptive Access Security",
+        "price" : null,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Centralized Access Management",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Dynamic Risk Evaluation",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Intelligent API Cybersecurity",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Fine-Grained Authorization",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Adaptive Access Security",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Jumpcloud",
+      "solutionName" : "Support",
+      "vendorCategory" : "Premium Features",
+      "tiers" : [ {
+        "name" : "Premium Features - PRO",
+        "price" : 4,
+        "period" : {
+          "unit" : 1,
+          "period" : "month"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Priority 24x7x365 support via phone, chat, or email including uptime SLAs.",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Premium Support",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Asset, security, and configuration reporting across your fleet of macOS®, Windows® and Linux® systems.",
+            "tags" : [ ]
+          } ],
+          "featureText" : "System Insights",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Event logs across all JumpCloud services for complete visibility into directory activity for compliance, security, and troubleshooting for 90 days.",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Directory Insights",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "Premium Features - Build Your Own Directory",
+        "price" : null,
+        "period" : null,
+        "features" : [ {
+          "featureText" : "per month",
+          "tags" : [ ]
+        } ]
+      } ]
+    } ]
+  }, {
+    "Customer Identtiy products" : [ {
+      "vendorName" : "Okta",
+      "solutionName" : "Customer Identity Products",
+      "vendorCategory" : "Editions",
+      "tiers" : [ {
+        "name" : "Developer(<1000MAU)",
+        "price" : 0,
+        "period" : {
+          "unit" : 1,
+          "period" : "Month"
+        },
+        "additionalTierPricing" : [ {
+          "name" : "Developer(<2500MAU)",
+          "price" : 50,
+          "period" : {
+            "unit" : 1,
+            "period" : "Month"
+          },
+          "features" : null
+        }, {
+          "name" : "Developer(<5000MAU)",
+          "price" : 100,
+          "period" : {
+            "unit" : 1,
+            "period" : "Month"
+          },
+          "features" : null
+        }, {
+          "name" : "Developer(<10000MAU)",
+          "price" : 200,
+          "period" : {
+            "unit" : 1,
+            "period" : "Month"
+          },
+          "features" : null
+        }, {
+          "name" : "Developer(<20000MAU)",
+          "price" : 400,
+          "period" : {
+            "unit" : 1,
+            "period" : "Month"
+          },
+          "features" : null
+        }, {
+          "name" : "Developer(<50000MAU)",
+          "price" : 1000,
+          "period" : {
+            "unit" : 1,
+            "period" : "Month"
+          },
+          "features" : null
+        } ],
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Service level assurance",
+            "tags" : [ ]
+          }, {
+            "featureText" : "User capacity- Tiers available up to 50K MAUs",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Custom applications - 5 OIDC Clients",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Support - Email only",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Editions",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Outbound federation to custom applications",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Social authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Group-level password policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Group and application-level sign-in policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta ThreatInsight",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Authentication",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "1 authorization server with 1 customizable access policy",
+            "tags" : [ ]
+          }, {
+            "featureText" : "OAuth 2.0 support",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable scopes and claims",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Token revocation",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Authorization",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Secure user store with customizable user attributes",
+            "tags" : [ ]
+          }, {
+            "featureText" : "User lifecycle states (e.g. activated, suspended, deactivated)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Attribute mapping and transformation",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Registration as a service",
+            "tags" : [ ]
+          } ],
+          "featureText" : "User management",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Okta Verify",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable email templates and domains",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable sign-in and registration widget",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Basic multi-factor authentication",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "One App",
+        "price" : 17000,
+        "period" : {
+          "unit" : 1,
+          "period" : "Year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Service level assurance",
+            "tags" : [ ]
+          }, {
+            "featureText" : "User capacity - Tiers available up to billions of MAUs",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Custom applications - 5 OIDC Clients",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Support",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Outbound federation to custom applications",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Social authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Group-level password policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Group and application-level sign-in policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta ThreatInsight",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Authorization",
+            "tags" : [ ]
+          }, {
+            "featureText" : "1 authorization server with 1 customizable access policy",
+            "tags" : [ ]
+          }, {
+            "featureText" : "OAuth 2.0 support",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable scopes and claims",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Token revocation",
+            "tags" : [ ]
+          }, {
+            "featureText" : "User management",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Secure user store with customizable user attributes",
+            "tags" : [ ]
+          }, {
+            "featureText" : "User lifecycle states (e.g. activated, suspended, deactivated)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Attribute mapping and transformation",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Registration as a service",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Basic multi-factor authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta Verify",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable email templates and domains",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable sign-in and registration widget",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Add-on products available",
+            "tags" : [ ]
+          } ],
+          "featureText" : "One App Edition",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "Enterprise",
+        "price" : 42000,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Service level assurance",
+            "tags" : [ ]
+          }, {
+            "featureText" : "User capacity - Tiers available up to billions of MAUs",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Custom applications - 5 OIDC Clients",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Support",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Outbound federation to custom applications",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Social authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Group-level password policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Group and application-level sign-in policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta ThreatInsight",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Authorization",
+            "tags" : [ ]
+          }, {
+            "featureText" : "1 authorization server with 1 customizable access policy",
+            "tags" : [ ]
+          }, {
+            "featureText" : "OAuth 2.0 support",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable scopes and claims",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Token revocation",
+            "tags" : [ ]
+          }, {
+            "featureText" : "User management",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Secure user store with customizable user attributes",
+            "tags" : [ ]
+          }, {
+            "featureText" : "User lifecycle states (e.g. activated, suspended, deactivated)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Attribute mapping and transformation",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Registration as a service",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Basic multi-factor authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta Verify",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable email templates and domains",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable sign-in and registration widget",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Add-on products available",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Enterprise Edition",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Okta",
+      "solutionName" : "Inbound Federation",
+      "vendorCategory" : "Add-Ons",
+      "tiers" : [ {
+        "name" : "Inbound Federation",
+        "price" : 8000,
+        "period" : {
+          "unit" : 1,
+          "period" : "year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Inbound SAML support from an external identity provider",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Just-in-time provisioning into Universal Directory and group assignments",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SAML attribute ingestion into Universal Directory",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Inbound Federation",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Okta",
+      "solutionName" : "API Access Management",
+      "vendorCategory" : "API Access Management",
+      "tiers" : [ {
+        "name" : "User-Driven flows",
+        "price" : 8000,
+        "period" : {
+          "unit" : 1,
+          "period" : "year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Unlimited OAuth 2.0 authorization servers",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Support for unlimited API resource domains",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Unlimited access policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Support for user-driven flows",
+            "tags" : [ ]
+          } ],
+          "featureText" : "User-Driven flows",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "Machine-to-machine",
+        "price" : 5000,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Unlimited OAuth 2.0 authorization servers",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Support for unlimited API resource domains",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Unlimited access policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Support for user-driven flows",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Support for non-human driven flows (client credentials grant type)",
+            "tags" : [ ]
+          } ],
+          "featureText" : "User-Driven flows",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Okta",
+      "solutionName" : "MFA",
+      "vendorCategory" : "Add-Ons",
+      "tiers" : [ {
+        "name" : "MFA",
+        "price" : 8000,
+        "period" : {
+          "unit" : 1,
+          "period" : "year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Okta Verify OTP",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta Verify Push",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Security question (as a second factor)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Email",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Voice",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SMS",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Third-party multi-factor support",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Policies based on:",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Users",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Groups",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Applications",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Network zones",
+            "tags" : [ ]
+          } ],
+          "featureText" : "MFA",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "Adaptive MFA",
+        "price" : 16000,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Okta Verify OTP",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Okta Verify Push",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Security question (as a second factor)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Email",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Voice",
+            "tags" : [ ]
+          }, {
+            "featureText" : "SMS",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Third-party multi-factor support",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Policies based on:",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Users",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Groups",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Applications",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Network zones",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Advanced policies based on:",
+            "tags" : [ ]
+          }, {
+            "featureText" : "New city, state, or country",
+            "tags" : [ ]
+          }, {
+            "featureText" : "New geo-location",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Impossible travel patterns",
+            "tags" : [ ]
+          }, {
+            "featureText" : "New device",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Managed device",
+            "tags" : [ ]
+          }, {
+            "featureText" : "New IP",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Network anonymizers",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Risk-based Authentication",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Adaptive MFA",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Okta",
+      "solutionName" : "SSO Integration",
+      "vendorCategory" : "Add-Ons",
+      "tiers" : [ {
+        "name" : "SSO Integration",
+        "price" : 2000,
+        "period" : {
+          "unit" : 1,
+          "period" : "year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Access to pre-built app integrations in the OIN",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Outbound federation (SAML, OIDC) to OIN applications",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Custom SAML assertion attributes to OIN applications",
+            "tags" : [ ]
+          } ],
+          "featureText" : "SSO Integration",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Okta",
+      "solutionName" : "Lifecycle management",
+      "vendorCategory" : "Add-Ons",
+      "tiers" : [ {
+        "name" : "Life cycle management",
+        "price" : 1000,
+        "period" : {
+          "unit" : 1,
+          "period" : "year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Deprovisioning workflow",
+            "tags" : [ ]
+          }, {
+            "featureText" : "AD group-based provisioning and deprovisioning",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Attribute-level mastering",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Group membership rules",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Access request workflow",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Provision and deprovision Okta users and groups into AD / LDAP",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Provision and deprovision Okta users and groups into OIN, SCIM and on-prem integrations",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Life cycle management",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Okta",
+      "solutionName" : "Directory Integration",
+      "vendorCategory" : "Add-Ons",
+      "tiers" : [ {
+        "name" : "Directory Integration",
+        "price" : 21000,
+        "period" : {
+          "unit" : 1,
+          "period" : "year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Active directory or LDAP user authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "AD / LDAP user synchronization and import",
+            "tags" : [ ]
+          }, {
+            "featureText" : "AD or LDAP mastered profiles",
+            "tags" : [ ]
+          }, {
+            "featureText" : "AD or LDAP password reset",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Directory Integration",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Okta",
+      "solutionName" : "Access Gateway",
+      "vendorCategory" : "Add-Ons",
+      "tiers" : [ {
+        "name" : "Access Gateway",
+        "price" : 8000,
+        "period" : {
+          "unit" : 1,
+          "period" : "year"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Okta Single Sign-on and MFA app integrations",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Number of app integrations - Unlimited",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Header-based applications",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Kerberos/IWA applications",
+            "tags" : [ ]
+          }, {
+            "featureText" : "On-premise applications – such as Oracle E-Business Suite, PeopleSoft, and Sharepoint",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Custom web apps, pages, and web portals",
+            "tags" : [ ]
+          }, {
+            "featureText" : "On-premise application policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Number of policies - Unlimitied",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Application policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Custom header variables",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Authorization policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Infrastructure",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Access Gateway servers - Unlimited",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Datacenters - Unlimited",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Networks and hosts - Unlimited",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Access Gateway",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "PingFederate",
+      "solutionName" : "Enterprise Customer Identity Platform",
+      "vendorCategory" : "Cstomer360 - Enterprise Customer Identity Platform",
+      "tiers" : [ {
+        "name" : "Enterprise Customer Identity Platform",
+        "price" : null,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Manage hundreds of millions of users",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Store billions of attributes",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Handle tens of thousands of authentications per second",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Topology management console for SLA visibility",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Scale & Performance",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Pre-built assets and UIs",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable email templates",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Operational visibility through native dashboards or APIs",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Ease of Use",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Deploy and coexist anywhere (virtual machine, containers, cloud, on-premises)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Automated cloud deployment with Docker and Kubernetes",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Support for hybrid deployments (on-premises and cloud-based)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Hosted Identity-as-a-Service (IDaaS) platform for customer identity",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Deployment",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Data encryption in every state (at rest, in motion, in use)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Administrator alerts (insecure configuration, access control, etc.)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Least-privileged access for admin accounts",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Record- and attribute-level access control to data",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Modern password hashing",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Tamper-evident and encrypted logging",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Simplified integration to third-party security and monitoring tools",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Security",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Lifecycle management and app promotion visibility",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Dashboard for monitoring all clients/connections across environments",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Delegated administration templates and workflows for onboarding/managing apps and certificates",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Orchestration engine for automated configuration promotions across environment tiers",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Central Identity Operating Portal",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "PingFederate",
+      "solutionName" : "Customer Acquisition & Retention",
+      "vendorCategory" : "Customer 360 - Customer Acquisition & Retention",
+      "tiers" : [ {
+        "name" : "Customer Acquisition & Retention",
+        "price" : null,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Access customer profile data using REST and SCIM APIs",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable registration templates",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Social registration and account linking",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Secure, convenient password policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Register with third-party IdPs",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Multiple registration options",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Email ownership verification",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable required registration fields",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Self-service customer data/preferences management",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Registration",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Fully customizable sign-on policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Group- and application-level sign-on policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Passwordless options (OTPs or push notifications)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Social login",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customizable sign-on templates",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customer-managed passwordless preferences",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Zero login (QR code authentication)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Passwordless transaction approval, CSR identity verifications and more",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Authentication",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Advanced, risk-based, contextual MFA",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Embed MFA into your own mobile app",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Adaptive authentication and authorization policies",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Restrict rooted or jailbroken devices",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customize authentication screens",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Skip MFA for recent authentications",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Customize MFA request messages",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Send SMS OTPs by country (localization)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Dedicated SMS/voice phone numbers",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Restrict users from sharing authentication devices",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Manage user devices",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Admin portal for managing users and apps, transaction reporting and more",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Multi-factor Authentication",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Customer service representative (CSR) identity verification",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Control which customer attributes CSRs can see",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Support",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Open standards support (OAuth 2.0, OpenID Connect, SAML, SCIM)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Inbound and outbound federation for custom apps",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Unlimited OIDC and SAML connections",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Connections to all identity stores (AD domains, on-premises, cloud-based)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Single logout (SLO)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Unlimited integrations to any app (custom, on-prem, SaaS, cloud)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Attribute aggregation from multiple directories",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Identity federation across various SSO scenarios",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Single Sign-on",
+          "tags" : [ ]
+        } ]
+      } ]
+    } ]
+  }, {
+    "Directory Services" : [ {
+      "vendorName" : "PingFederate",
+      "solutionName" : "Directory Service",
+      "vendorCategory" : "Workforce 360 - Directory and Data Store",
+      "tiers" : [ {
+        "name" : "Directory & Data Store",
+        "price" : 5,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Data encryption in every state (at rest, in motion, in use)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Modern password hashing (Argon2, PBKDF2, Scrypt, Bcrypt)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Record- and attribute-level access control to data",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Administrator alerts (insecure configuration, access control, etc.)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Least-privileged access for admin accounts",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Tamper-evident and encrypted logging",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Rapid integration to third-party security monitoring tools",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Security",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Hybrid directory (IDaaS and cloud-ready software directory)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Unlimited custom user attributes and fields",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Unlimited directory integrations (AD, LDAP and more)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Profile synchronization with custom attribute mapping",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Single Source of Truth",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Extreme scalability with low latency (hundreds of millions of identities, billions of attributes)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Unified profile data access via REST, SCIMv2 APIs, or LDAPv3",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Easily store unstructured data (browser fingerprints)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Deploy and coexist anywhere (virtual machine, containers, cloud, on-premises)",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Automated, preconfigured deployment with Docker and Kubernetes",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Flexibility",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Management console for performance and infrastructure monitoring",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Real-time, bidirectional data synchronization for zero-downtime migrations",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Emulate proprietary systems with compatibility modes and custom server extensions",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Built-in LDAPv3-compliant proxy server for load-distribution control",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Delegated administration of user profiles (help desk, HR, etc.)",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Ease of Management",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Jumpcloud",
+      "solutionName" : "Directory Services",
+      "vendorCategory" : "Jumpcloud Pro",
+      "tiers" : [ {
+        "name" : "PRO",
+        "price" : 12,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Manage user identities and user-related data via web consoles and APIs.",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Enforce password complexity & rotation policies along with multi-factor authentication",
+            "tags" : [ ]
+          }, {
+            "featureText" : "Integrate with external identity sources for improved user lifecycle management",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Cloud Directory Services",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "Build Your Own Directory",
+        "price" : null,
+        "period" : null,
+        "features" : [ {
+          "featureText" : "per month",
+          "tags" : [ ]
+        } ]
+      } ]
+    }, {
+      "vendorName" : "Jumpcloud",
+      "solutionName" : "Directory Services",
+      "vendorCategory" : "Additional Features",
+      "tiers" : [ {
+        "name" : "PRO",
+        "price" : 12,
+        "period" : {
+          "unit" : 1,
+          "period" : "month"
+        },
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Auth apps & file servers with scalable, cloud-based LDAP servers.",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Cloud LDAP",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Secure network access with scalable, cloud-based RADIUS servers.",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Cloud RADIUS",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Control user access to apps through pre-built SAML 2.0 connectors.",
+            "tags" : [ ]
+          } ],
+          "featureText" : "SSO(SAML 2.0)",
+          "tags" : [ ]
+        }, {
+          "children" : [ {
+            "featureText" : "Manage user access, leverage Apple MDM, and apply GPO-like functions at scale for macOS®, Windows® and Linux® systems",
+            "tags" : [ ]
+          } ],
+          "featureText" : "System Management",
+          "tags" : [ ]
+        } ]
+      }, {
+        "name" : "Additional Features - Build Your Own Directory",
+        "price" : null,
+        "period" : null,
+        "features" : [ {
+          "featureText" : "month",
+          "tags" : [ ]
+        } ]
+      } ]
+    } ]
+  }, {
+    "Unified Customer Profile" : [ {
+      "vendorName" : "PingFederate",
+      "solutionName" : "Unified Customer Profile",
+      "vendorCategory" : "Customer 360 - Unified Customer profile",
+      "tiers" : [ {
+        "name" : "Unified Customer Profile",
+        "price" : null,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Build personalized multi-channel experiences",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Unified Customer Profile",
+          "tags" : [ ]
+        } ]
+      } ]
+    } ]
+  }, {
+    "Privacy & Consent Management" : [ {
+      "vendorName" : "PingFederate",
+      "solutionName" : "Privacy & Consent Management",
+      "vendorCategory" : "Customer 360 - Privacy & Consent Management",
+      "tiers" : [ {
+        "name" : "Privacy & Consent Management",
+        "price" : null,
+        "period" : null,
+        "features" : [ {
+          "children" : [ {
+            "featureText" : "Compliance to build trust and loyalty",
+            "tags" : [ ]
+          } ],
+          "featureText" : "Privacy & Consent Management",
+          "tags" : [ ]
+        } ]
+      } ]
+    } ]
+  } ]
+}
+    
