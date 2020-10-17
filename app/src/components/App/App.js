@@ -1,33 +1,38 @@
-import React, { Component } from "react";
+import React from "react";
 import data from './MsspData.json';
+import Header from '../Header/Header';
+import Sidebar from '../Sidebar/Sidebar';
+import Footer from '../Footer/Footer';
 import Home from '../Home/Home';
 import Products from '../Products/Products';
-import ProductsDetails from '../Products/ProductsDetails';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import './App.css';
+import {MuiThemeProvider, createMuiTheme  } from '@material-ui/core/styles';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link,
-  useParams
+  Route
 } from "react-router-dom";
-
-class App extends Component {
-  render() {
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#fff'
+    },
+    secondary:{
+      main:'#62E509'
+    }
+  }
+});
+export default function App() {
   return (
+    <MuiThemeProvider theme={theme}>
     <Router>
     <Header />
+    <Sidebar />
       <Switch>
-       <Route exact path="/products/:types" render={props => <Products productData = {data} />} />
-       <Route exact path="/products/:types/:parentCategories/:childCategories" render={props => <ProductsDetails productData = {data} />} />
-       <Route exact path="/" render={props => <Home productData = {data} />} />
-       </Switch>
+        <Route exact path="/" render={props => <Home productData = {data.categories} />} />
+        <Route exact path="/products/:categories" render={props => <Products productData = {data.categories} />} />
+      </Switch>
       <Footer />
     </Router>
+    </MuiThemeProvider>
   )
-  }
 }
-
-export default App

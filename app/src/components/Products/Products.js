@@ -1,100 +1,106 @@
-import React, {Component  } from 'react';
-import {Link} from "react-router-dom";
-import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBCard, MDBCardTitle, MDBIcon, MDBCardImage, MDBCardBody } from "mdbreact";
-import msspData from './MsspData.json';
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Toolbar from '@material-ui/core/Toolbar';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button'
+import {useParams,Link} from "react-router-dom";
+import Divider from '@material-ui/core/Divider';
+import CategoriesListings from './CategoriesListings';
 
-class Products extends Component {
-  constructor(props, context) {
-    super(props, context);
-    this.state = {
-      productsCategory:{},
-      productsCategoryTitle:''
-    };
+const containerLeft = 240;
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    marginLeft:containerLeft
+  },
+  content: {
+    flexGrow: 1,
+    padding: theme.spacing(2),
+  },
+  paper: {
+    padding: theme.spacing(3),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+    margin:10,
+  },
+  divider: {
+    margin: theme.spacing(2, 0),
+  },
+  title:{
+    marginBottom:'25px'
+  },
+  button:{
+    marginTop:'25px'
   }
+}));
 
-   productsCategoryFilter = () => {
-    let pathname = window.location.pathname;
-    var temp = pathname.split('/');
-    temp = temp.slice(-2);
-    temp[0] = decodeURI(temp[0]);
-    temp[1] = decodeURI(temp[1]);
+export default function Products(data) {
+  const classes = useStyles();
+  let params = useParams();
+  console.log(data['productData']);
+  let cat = {1:"Okta",2:"IDAPTIVE",3:"PingFederate"};
 
-    let filterData = [];
-    msspData['categories'].map((data, key) => {
-      data = data[temp[1]];
-      if(data !== undefined){
-        data.map((data2, key2) => {
-            if(filterData[data2['solutionName']] !== undefined){
-              filterData[data2['solutionName']][data2['vendorName']] = data2;
-            }else{
-              filterData[data2['solutionName']] = [];
-              filterData[data2['solutionName']][data2['vendorName']] = data2;
-            }
-        });
-      }
-    });
-    this.setState({
-      productsCategory:filterData,
-      productsCategoryTitle:temp[1],
-    });
-  };
-
-    productsCategorychild = (parentCategories,categories) => {
-     let ret = Object.keys(categories).map((key, index) => {
-         return (
-           <MDBCol key={key} lg="4" sm="6" size="12" className="my-1">
-               <MDBCard className='card-image'>
-                     <div className='text-black text-center d-flex align-items-center py-3 px-3'>
-                      <Link to={"/products/"+this.state.productsCategoryTitle+'/'+parentCategories+'/'+key} className="w-100">
-                       <div className="text-center">
-                          <img src="../images/security.png" width="70" className="img-fluid" />
-                         <MDBCardTitle tag='h6' className='pt-2'>
-                           <strong>{key}</strong>
-                         </MDBCardTitle>
-                       </div>
-                       </Link>
-                     </div>
-                   </MDBCard>
-
-           </MDBCol>
-
-         )
-     })
-     return ret;
-   }
-
-   productsCategory = () => {
-    let ret = Object.keys(this.state.productsCategory).map((key, index) => {
-        return (
-          <MDBCol key={key} lg="6" sm="6" size="12" className="my-3">
-          <div className="rgba-grey-light p-4 z-depth-1">
-          <h5 className="font-weight-bold mb-3">{key}</h5>
-            <MDBRow>
-              {this.productsCategorychild(key,this.state.productsCategory[key])}
-            </MDBRow>
-          </div>
-          </MDBCol>
-        )
-    })
-    return ret;
-  }
-  componentDidMount(){
-    this.productsCategoryFilter();
-  }
-  render(){
   return (
-    <MDBContainer>
-      <MDBRow className="mt-4">
-        <MDBCol md="12" size="12">
-          <h1>Products</h1>
-          <p className="w-100">{this.state.productsCategoryTitle}</p>
-        </MDBCol>
-      </MDBRow>
-      <MDBRow>
-        {this.productsCategory()}
-      </MDBRow>
-    </MDBContainer>
-  )
-  }
+    <div className={classes.root}>
+      <CssBaseline />
+      <main className={classes.content}>
+        <Toolbar />
+
+
+<div>
+
+<Grid container spacing={3}>
+
+  <Grid item xs={6}>
+    <Paper className={classes.paper}>
+
+    <h3 className={classes.title}>SSO</h3>
+    <Grid container spacing={3}>
+    {
+      Object.keys(cat).map((index,value) => {
+        var name = cat[index];
+        return CategoriesListings({name,index})
+      })
+    }
+    </Grid>
+
+    <Button variant="contained" color="secondary" className={classes.button}>
+      Compare
+    </Button>
+
+    </Paper>
+  </Grid>
+
+  <Grid item xs={6}>
+    <Paper className={classes.paper}>
+
+    <h3 className={classes.title}>MFA</h3>
+    <Grid container spacing={3}>
+    {
+      Object.keys(cat).map((index,value) => {
+        var name = cat[index];
+        return CategoriesListings({name,index})
+      })
+    }
+    </Grid>
+
+    <Button variant="contained" color="secondary" className={classes.button}>
+      Compare
+    </Button>
+
+    </Paper>
+  </Grid>
+
+
+
+</Grid>
+
+</div>
+
+      </main>
+    </div>
+  );
 }
-export default Products
