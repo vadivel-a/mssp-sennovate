@@ -1,10 +1,10 @@
 import React from "react";
 import data from './MsspData.json';
 import Header from '../Header/Header';
-import Sidebar from '../Sidebar/Sidebar';
 import Footer from '../Footer/Footer';
 import Home from '../Home/Home';
 import Products from '../Products/Products';
+import ProductsDetails from '../Products/ProductsDetails';
 import {MuiThemeProvider, createMuiTheme  } from '@material-ui/core/styles';
 import {
   BrowserRouter as Router,
@@ -26,10 +26,10 @@ export default function App() {
     <MuiThemeProvider theme={theme}>
     <Router>
     <Header />
-    <Sidebar />
       <Switch>
         <Route exact path="/" render={props => <Home productData = {data.categories} />} />
         <Route exact path="/products/:categories" render={props => <Products productData = {data.categories} />} />
+        <Route exact path="/products/:categories/:categorie" render={props => <ProductsDetails productData = {data.categories} />} />
       </Switch>
       <Footer />
     </Router>

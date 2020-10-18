@@ -1,20 +1,14 @@
-import React from 'react';
+import React,{useState,useReducer} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
-import Button from '@material-ui/core/Button'
-import {useParams,Link} from "react-router-dom";
-import Divider from '@material-ui/core/Divider';
+import {Grid,Paper,Button,Backdrop,CircularProgress } from '@material-ui/core';
+//import {useParams} from "react-router-dom";
 import CategoriesListings from './CategoriesListings';
-
-const containerLeft = 240;
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    marginLeft:containerLeft
+    display: 'flex'
   },
   content: {
     flexGrow: 1,
@@ -25,6 +19,21 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
     margin:10,
+    position:'relative'
+  },
+  loader:{
+    position: 'absolute',
+    backgroundColor: 'rgb(0 0 0 / 35%)',
+    color: '#fff',
+    height: '100%',
+    width: '100%',
+    left: '0',
+    top: '0',
+  },
+  backdrop: {
+    zIndex: theme.zIndex.drawer + 1,
+    color: '#fff',
+    position:'absolute'
   },
   divider: {
     margin: theme.spacing(2, 0),
@@ -37,11 +46,35 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+const formReducer = (state, event) => {
+ return {
+   ...state,
+   [event.name]: event.value
+ }
+}
+
 export default function Products(data) {
   const classes = useStyles();
-  let params = useParams();
-  console.log(data['productData']);
+  //let params = useParams();
+  const [formData, setFormData] = useReducer(formReducer, {});
+  const [submitting, setSubmitting] = useState(false);
+
   let cat = {1:"Okta",2:"IDAPTIVE",3:"PingFederate"};
+  const handleCheckChieldElement=(name,checked)=>{
+    setFormData({
+       name: name,
+       value: checked,
+     });
+  }
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    console.log(formData);
+    setSubmitting(true);
+    setTimeout(() => {
+      setSubmitting(false);
+    }, 500);
+  }
 
   return (
     <div className={classes.root}>
@@ -50,7 +83,7 @@ export default function Products(data) {
         <Toolbar />
 
 
-<div>
+
 
 <Grid container spacing={3}>
 
@@ -62,14 +95,18 @@ export default function Products(data) {
     {
       Object.keys(cat).map((index,value) => {
         var name = cat[index];
-        return CategoriesListings({name,index})
+        return (<CategoriesListings key={index} name={name} index={index} handleCheckChieldElement={handleCheckChieldElement} />)
       })
     }
     </Grid>
 
-    <Button variant="contained" color="secondary" className={classes.button}>
-      Compare
+    <Button variant="outlined" color="secondary" className={classes.button} onClick={handleSubmit}>
+      Compare Solutions
     </Button>
+
+      <Backdrop className={classes.backdrop} open={submitting}>
+              <CircularProgress color="secondary" />
+      </Backdrop>
 
     </Paper>
   </Grid>
@@ -77,28 +114,30 @@ export default function Products(data) {
   <Grid item xs={6}>
     <Paper className={classes.paper}>
 
-    <h3 className={classes.title}>MFA</h3>
+    <h3 className={classes.title}>SSO</h3>
     <Grid container spacing={3}>
     {
       Object.keys(cat).map((index,value) => {
         var name = cat[index];
-        return CategoriesListings({name,index})
+        return (<CategoriesListings key={index} name={name} index={index} handleCheckChieldElement={handleCheckChieldElement} />)
       })
     }
     </Grid>
 
-    <Button variant="contained" color="secondary" className={classes.button}>
-      Compare
+    <Button variant="outlined" color="secondary" className={classes.button} onClick={handleSubmit}>
+      Compare Solutions
     </Button>
+    <Backdrop className={classes.backdrop} open={submitting}>
+            <CircularProgress color="secondary" />
+    </Backdrop>
+
 
     </Paper>
   </Grid>
 
 
-
 </Grid>
 
-</div>
 
       </main>
     </div>

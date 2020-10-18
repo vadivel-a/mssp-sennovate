@@ -1,7 +1,6 @@
 //https://www.digitalocean.com/community/tutorials/how-to-share-state-across-react-components-with-context
 
 import React,{useState} from 'react';
-import {Link } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -17,11 +16,12 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '20px'
   }
 }));
-export default function CategoriesListings({name,index}) {
+export default function CategoriesListings({name,index,handleCheckChieldElement}) {
   const classes = useStyles();
   const [checked, setChecked] = useState(false);
   const handleChange = (event) => {
     setChecked(!checked);
+    handleCheckChieldElement(name,!checked);
   };
 
   return(
