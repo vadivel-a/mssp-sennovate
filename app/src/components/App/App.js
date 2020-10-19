@@ -5,7 +5,9 @@ import Footer from '../Footer/Footer';
 import Home from '../Home/Home';
 import Products from '../Products/Products';
 import ProductsDetails from '../Products/ProductsDetails';
+import Cart from '../Cart/Cart';
 import {MuiThemeProvider, createMuiTheme  } from '@material-ui/core/styles';
+import {CartProvider} from '../Context/CartContext';
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,15 +26,18 @@ const theme = createMuiTheme({
 export default function App() {
   return (
     <MuiThemeProvider theme={theme}>
+    <CartProvider>
     <Router>
     <Header />
       <Switch>
         <Route exact path="/" render={props => <Home productData = {data.categories} />} />
         <Route exact path="/products/:categories" render={props => <Products productData = {data.categories} />} />
         <Route exact path="/products/:categories/:categorie" render={props => <ProductsDetails productData = {data.categories} />} />
+        <Route exact path="/cart" component={Cart} />
       </Switch>
       <Footer />
     </Router>
+    </CartProvider>
     </MuiThemeProvider>
   )
 }

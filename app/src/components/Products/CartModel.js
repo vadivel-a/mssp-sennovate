@@ -1,52 +1,150 @@
-import React,{useState,useEffect} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
+import React,{useEffect,useContext} from 'react';
+import { withStyles } from '@material-ui/core/styles';
+import {Button,TextField } from '@material-ui/core';
+import Dialog from '@material-ui/core/Dialog';
+import MuiDialogTitle from '@material-ui/core/DialogTitle';
+import MuiDialogContent from '@material-ui/core/DialogContent';
+import MuiDialogActions from '@material-ui/core/DialogActions';
+import IconButton from '@material-ui/core/IconButton';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import CloseIcon from '@material-ui/icons/Close';
+import Typography from '@material-ui/core/Typography';
+import {CartContext} from '../Context/CartContext';
 
-const useStyles = makeStyles((theme) => ({
-  modal: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+const styles = (theme) => ({
+  root: {
+    margin: 0,
+    padding: theme.spacing(2),
   },
-  paper: {
-    backgroundColor: theme.palette.background.paper,
-    border: '2px solid #000',
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+  closeButton: {
+    position: 'absolute',
+    right: theme.spacing(1),
+    top: theme.spacing(1),
+    color: theme.palette.grey[500],
   },
-}));
+  formControl: {
+      marginTop: theme.spacing(2),
+      minWidth: 220,
+  }
+});
 
-export default function TransitionsModal({isopen, onCartModelclose}) {
-  const classes = useStyles();
-  const [open, setOpen] = useState(isopen);
+const DialogTitle = withStyles(styles)((props) => {
+  const { children, classes, onClose, ...other } = props;
+  return (
+    <MuiDialogTitle disableTypography className={classes.root} {...other}>
+      <Typography variant="h6">{children}</Typography>
+      {onClose ? (
+        <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
+          <CloseIcon />
+        </IconButton>
+      ) : null}
+    </MuiDialogTitle>
+  );
+});
+
+const DialogContent = withStyles((theme) => ({
+  root: {
+    padding: theme.spacing(2),
+  },
+}))(MuiDialogContent);
+
+const DialogActions = withStyles((theme) => ({
+  root: {
+    margin: 0,
+    padding: theme.spacing(1),
+    display: 'inline-block',
+  },
+}))(MuiDialogActions);
+
+export default function CartModel({isopen, onCartModelclose, data}) {
+  const [cart, setCart] = useContext(CartContext);
+  const [open, setOpen] = React.useState(isopen);
+  const [usercount, setUsercount] = React.useState(0);
+  const [submit, setSubmit] = React.useState({});
+  const [renderdialogcontent, setRednerDialogContent] = React.useState();
+
+  const addToCart = ()=>{
+  	const item={name:data.name,price:data.price}
+  	setCart(curr=>[...curr, item]);
+    setRednerDialogContent(cartAddedDialogContent);
+  }
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
   const handleClose = () => {
     setOpen(false);
     onCartModelclose(false);
   };
+  useEffect(() => {
+    setRednerDialogContent(defaultDialogContent);
+  },[usercount]);
+  function defaultDialogContent(){
+    return(
+      <>
+    <DialogContent dividers>
+      <Typography gutterBottom variant="h2">
+        ${data.price}
+      </Typography>
+      <Typography gutterBottom variant="body2" >
+      Per User / Per {data.type}
+      </Typography>
+      <TextField
+        margin="dense"
+        id="no_user"
+        label="Number of user"
+        type="number"
+        fullWidth
+        color='secondary'
+        style={{'max-width':'200px','width':'100%'}}
+        onChange={(e) => {setUsercount(e.target.value);}}
+      />
+    </DialogContent>
+    <DialogActions >
+      <Button onClick={handleClose} color="secondary" variant="outlined">
+        Cancel
+      </Button>
+      <Button onClick={addToCart} color="secondary" variant="outlined">
+        <ShoppingCartIcon />Add Cart
+      </Button>
+    </DialogActions>
+    </>
+    )
+  }
+  const cartAddedDialogContent=()=>{
+    return(
+    <>
+    <DialogContent dividers>
+      <Typography gutterBottom variant="h2" style={{'fontSize':'2.75rem'}}>
+        {usercount} Users added to cart!
+      </Typography>
+    </DialogContent>
+    <DialogActions >
+      <Button onClick={handleClose} color="secondary" variant="outlined">
+        Continue to Products
+      </Button>
+      <Button onClick={handleClose} color="secondary" variant="outlined">
+        Proceed to Cart
+      </Button>
+    </DialogActions>
+    </>
+    )
+  }
+
+
+
   return (
     <div>
-      <Modal
-        aria-labelledby="transition-modal-title"
-        aria-describedby="transition-modal-description"
-        className={classes.modal}
-        open={open}
+      <Dialog
         onClose={handleClose}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
-      >
-        <Fade in={open}>
-          <div className={classes.paper}>
-            <p onClick={handleClose}>X</p>
-            <h2 id="transition-modal-title">Transition modal</h2>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-          </div>
-        </Fade>
-      </Modal>
+        aria-labelledby="customized-dialog-title"
+        open={open} fullWidth='true'
+        align='center'
+        maxWidth='xs'>
+        <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+          {data.name} / Per {data.type}
+        </DialogTitle>
+        {renderdialogcontent}
+      </Dialog>
     </div>
   );
 }

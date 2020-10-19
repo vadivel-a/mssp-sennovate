@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import {Link} from "react-router-dom";
 import { fade, makeStyles  } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -11,6 +11,7 @@ import Menu from '@material-ui/core/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import {CartContext} from '../Context/CartContext';
 
 //import logo from '/logo.png';
 
@@ -61,6 +62,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 export default function Header() {
+    const [cart, setCart] = useContext(CartContext);
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -113,11 +115,13 @@ export default function Header() {
         onClose={handleMobileMenuClose}
       >
         <MenuItem>
-          <IconButton aria-label="show 4 new mails" color="inherit">
-            <Badge badgeContent={4} color="secondary">
+          <Link to={'/cart'}>
+          <IconButton aria-label="show 4 new mails" color="black">
+            <Badge badgeContent={cart.length} color="secondary">
               <ShoppingCartIcon />
             </Badge>
           </IconButton>
+          </Link>
           <p>Messages</p>
         </MenuItem>
         <MenuItem onClick={handleProfileMenuOpen}>
@@ -143,11 +147,13 @@ export default function Header() {
           <div className={classes.grow} />
 
           <div className={classes.sectionDesktop}>
-            <IconButton aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={4} color="secondary">
+            <Link to={'/cart'}>
+            <IconButton aria-label="show 4 new mails" color="black">
+              <Badge badgeContent={cart.length} color="secondary">
                 <ShoppingCartIcon />
               </Badge>
             </IconButton>
+            </Link>
             <IconButton
               edge="end"
               aria-label="account of current user"

@@ -1,9 +1,9 @@
-import React,{useState,useRef} from 'react';
+import React,{useState,useContext} from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 import PropTypes from 'prop-types';
 import { makeStyles,withStyles } from '@material-ui/core/styles';
-import {List,ListItem,ListSubheader,Tooltip,Button,Paper,Grid,Card,CardActions,CardContent} from '@material-ui/core';
+import {List,ListItem,Tooltip,Button,Paper,Grid,Card,CardActions,CardContent} from '@material-ui/core';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
@@ -14,6 +14,8 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import CartModel from './CartModel';
 import {useParams} from "react-router-dom";
+import DoneIcon from '@material-ui/icons/Done';
+import {CartContext} from '../Context/CartContext';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -73,6 +75,10 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     marginBottom:15,
     backgroundColor:'#fbfbfb'
+  },
+  listitem:{
+    fontSize:'14px',
+    padding:'5px 0'
   }
 }));
 
@@ -80,32 +86,31 @@ export default function ProductsDetails(data) {
   const classes = useStyles();
   const [value, setValue] = useState(0);
   const [cartmodel, setCartmodel] = useState(false);
+  const [modelcontent, setModelcontent] = useState({});
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
   let params = useParams();
 
-  const tabData = data['productData'][0]['Workforce Identity Products'][0]['SSO'][0]['tiers'];
-  function addToCart(){
-    setCartmodel(true);
-  }
+  const tabData = data['productData'][0][params['categories']][0]['SSO'][1]['tiers'];
+
   function cartModelclose(){
     setCartmodel(false);
   }
-  console.log(tabData);
+  //console.log(tabData);
   function featuresList(data){
     return Object.keys(data).map((key)=>{
-      return(<List>{data[key]['featureText']}
+      return(<ListItem className={classes.listitem}><DoneIcon fontSize="small" />{data[key]['featureText']}
         <LightTooltip arrow placement="top" title="LoremFlickr provides placeholder images for every case, web or print, on almost any subject, in any size. It's simple and free. Just put the custom url in your code like s">
           <InfoOutlinedIcon color="secondary" style={{'cursor':'pointer'}} />
         </LightTooltip>
-      </List>);
+      </ListItem>);
     });
   }
   function tabPanelContent(features){
     return(<div>{
         Object.keys(features).map((key)=>{
-          return(<div alignItems="flex-start" key={key}><h5><b>{features[key]['featureText']}</b></h5><List>{featuresList(features[key]['children'])}</List></div>);
+          return(<div alignItems="flex-start" key={key}><Typography gutterBottom variant="h6" style={{'marginBottom':'0','marginTop':'15px'}}>{features[key]['featureText']}</Typography><List>{featuresList(features[key]['children'])}</List></div>);
         })
       }
     </div>)
@@ -113,6 +118,7 @@ export default function ProductsDetails(data) {
   function cartbox(data, type){
     let price = data['price'];
     if(type === 'Year'){price = price * 12;}
+    let passdata = {name:data.name, price:price, type:type}
     return(
       <Card className={classes.cartbox} align="center" variant="outlined">
         <CardContent>
@@ -127,11 +133,23 @@ export default function ProductsDetails(data) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button onClick={addToCart} size="large" variant="outlined" color="secondary"><ShoppingCartIcon />Add Cart</Button>
+          <Button onClick={() => {setModelcontent(passdata);setCartmodel(true);}} size="large" variant="outlined" color="secondary"><ShoppingCartIcon />Add Cart</Button>
         </CardActions>
       </Card>
     );
   }
+
+  function cartboxCompare(data, type){
+    let price = data['price'];
+    if(type === 'Year'){price = price * 12;}
+    let passdata = {name:data.name, price:price, type:type}
+    return(
+      <Card className={classes.cartbox} align="left" elevation={0}>
+          <Button style={{'width':'280px'}} onClick={() => {setModelcontent(passdata);setCartmodel(true);}} size="large" variant="outlined" color="secondary"><ShoppingCartIcon />${price} Per User / Per {type}</Button>
+      </Card>
+    );
+  }
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -154,6 +172,7 @@ export default function ProductsDetails(data) {
             <Tab key={key} label={tabData[key]['name']} {...a11yProps(Number(key))} />
           ))
         }
+          <Tab key='compare' label='Compare' {...a11yProps(Number(Object.keys(tabData).length))} />
           </Tabs>
         </AppBar>
 
@@ -176,9 +195,33 @@ export default function ProductsDetails(data) {
             </TabPanel>)
           })
         }
+        <TabPanel key='compare'  value={value} index={Number(Object.keys(tabData).length)}>
+        <Grid container spacing={3}>
+        {
+
+        Object.keys(tabData).map((key)=>{
+          return(
+
+          <Grid item xs={6}>
+          <Paper elevation={0}  >
+            <Grid item xs={12}>{tabPanelContent(tabData[key]['features'])}</Grid>
+            <Grid item xs={12} justify="left" alignItems="left">
+              <Grid container direction="column">
+              {cartboxCompare(tabData[key],'Month')}
+              {cartboxCompare(tabData[key],'Year')}
+              </Grid>
+            </Grid>
+            </Paper>
+          </Grid>
+          )
+        })
+
+        }
+        </Grid>
+        </TabPanel>
         </Paper>
         {
-          cartmodel?<CartModel isopen={cartmodel} onCartModelclose={cartModelclose} />:''
+          cartmodel?<CartModel isopen={cartmodel} onCartModelclose={cartModelclose} data={modelcontent} />:''
         }
       </main>
     </div>
