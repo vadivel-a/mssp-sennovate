@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 import {Grid,Paper,Button,Backdrop,CircularProgress } from '@material-ui/core';
+import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
+import {useParams} from "react-router-dom";
 //import {useParams} from "react-router-dom";
 import CategoriesListings from './CategoriesListings';
 
@@ -55,6 +57,7 @@ const formReducer = (state, event) => {
 
 export default function Products(data) {
   const classes = useStyles();
+  let params = useParams();
   //let params = useParams();
   const [formData, setFormData] = useReducer(formReducer, {});
   const [submitting, setSubmitting] = useState(false);
@@ -76,12 +79,18 @@ export default function Products(data) {
     }, 500);
   }
 
+  const breadcrumbList = [
+    {title:"Home", to:"/"},
+    {title:"Products", to:"/"},
+    {title:params.categories, to:'current'}
+  ];
+
   return (
     <div className={classes.root}>
       <CssBaseline />
       <main className={classes.content}>
         <Toolbar />
-
+        <Breadcrumbs currentTitle={params.categories} pageTitle={params.categories} breadcrumbList={breadcrumbList} />
 
 
 

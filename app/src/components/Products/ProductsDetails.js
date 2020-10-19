@@ -150,12 +150,19 @@ export default function ProductsDetails(data) {
     );
   }
 
+  const breadcrumbList = [
+    {title:"Home", to:"/"},
+    {title:"Products", to:"/"},
+    {title:params.categories, to:`/products/${params.categories}`},
+    {title:params.categorie, to:'current'}
+  ];
+
   return (
     <div className={classes.root}>
       <CssBaseline />
       <main className={classes.content}>
         <Toolbar />
-        <Breadcrumbs currentTitle='SSO' />
+        <Breadcrumbs currentTitle='SSO' pageTitle={params.categories} breadcrumbList={breadcrumbList} />
         <Paper >
         <AppBar position="static" elevation={0} variant="outlined" >
           <Tabs
