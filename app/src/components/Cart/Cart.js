@@ -80,9 +80,9 @@ export default function Cart() {
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="My Cart" {...a11yProps(0)} />
+          <Tab label="My Orders" {...a11yProps(1)} />
+          <Tab label="My Renewals" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
         <TabPanel value={value} index={0} dir={theme.direction}>
