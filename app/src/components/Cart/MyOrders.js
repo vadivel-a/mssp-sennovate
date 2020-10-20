@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -7,6 +7,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import {CartContext} from '../Context/CartContext';
 
 const useStyles = makeStyles({
   table: {
@@ -28,7 +29,8 @@ const rows = [
 
 export default function MyOrders() {
   const classes = useStyles();
-
+  const [cart, setCart] = useContext(CartContext);
+console.log(cart);
   return (
     <TableContainer component={Paper}>
       <Table className={classes.table} aria-label="simple table">

@@ -4,7 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 import {Grid,Paper,Button,Backdrop,CircularProgress } from '@material-ui/core';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
-import {useParams} from "react-router-dom";
+import {useParams,useHistory} from "react-router-dom";
 //import {useParams} from "react-router-dom";
 import CategoriesListings from './CategoriesListings';
 
@@ -69,13 +69,14 @@ export default function Products(data) {
        value: checked,
      });
   }
-
+  let history = useHistory();
   const handleSubmit = event => {
     event.preventDefault();
     console.log(formData);
     setSubmitting(true);
     setTimeout(() => {
       setSubmitting(false);
+      history.push('/products/Workforce%20Identity%20Products/SSO');
     }, 500);
   }
 

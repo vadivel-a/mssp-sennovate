@@ -10,6 +10,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
 import {CartContext} from '../Context/CartContext';
+import {Link } from "react-router-dom";
 
 const styles = (theme) => ({
   root: {
@@ -59,14 +60,16 @@ const DialogActions = withStyles((theme) => ({
 export default function CartModel({isopen, onCartModelclose, data}) {
   const [cart, setCart] = useContext(CartContext);
   const [open, setOpen] = React.useState(isopen);
-  const [usercount, setUsercount] = React.useState(0);
+  const [usercount, setUsercount] = React.useState(1);
   const [submit, setSubmit] = React.useState({});
   const [renderdialogcontent, setRednerDialogContent] = React.useState();
 
   const addToCart = ()=>{
-  	const item={name:data.name,price:data.price}
+  	const item={name:data.name,price:data.price, type:data.type, user:usercount}
   	setCart(curr=>[...curr, item]);
-    setRednerDialogContent(cartAddedDialogContent);
+    if(usercount > 0){
+      setRednerDialogContent(cartAddedDialogContent);
+    }
   }
   const handleClickOpen = () => {
     setOpen(true);
@@ -89,6 +92,7 @@ export default function CartModel({isopen, onCartModelclose, data}) {
       Per User / Per {data.type}
       </Typography>
       <TextField
+        defaultValue='1'
         margin="dense"
         id="no_user"
         label="Number of user"
@@ -122,15 +126,15 @@ export default function CartModel({isopen, onCartModelclose, data}) {
       <Button onClick={handleClose} color="secondary" variant="outlined">
         Continue to Products
       </Button>
-      <Button onClick={handleClose} color="secondary" variant="outlined">
+      <Link to={'/cart'} >
+      <Button color="secondary" variant="outlined" component="button">
         Proceed to Cart
       </Button>
+      </Link>
     </DialogActions>
     </>
     )
   }
-
-
 
   return (
     <div>

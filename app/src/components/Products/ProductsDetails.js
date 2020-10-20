@@ -116,6 +116,7 @@ export default function ProductsDetails(data) {
     </div>)
   }
   function cartbox(data, type){
+
     let price = data['price'];
     if(type === 'Year'){price = price * 12;}
     let passdata = {name:data.name, price:price, type:type}
@@ -162,7 +163,7 @@ export default function ProductsDetails(data) {
       <CssBaseline />
       <main className={classes.content}>
         <Toolbar />
-        <Breadcrumbs currentTitle='SSO' pageTitle={params.categories} breadcrumbList={breadcrumbList} />
+        <Breadcrumbs currentTitle={params.categories} pageTitle={params.categories} breadcrumbList={breadcrumbList} />
         <Paper >
         <AppBar position="static" elevation={0} variant="outlined" >
           <Tabs
