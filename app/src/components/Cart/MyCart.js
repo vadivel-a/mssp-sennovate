@@ -39,7 +39,7 @@ const rows = [
   {'name':'SSO Oka','users':'100','monthly':'5','yearly':'','amount':'200'},
   {'name':'Adaptive','users':'150','monthly':'','yearly':'40','amount':'2000'}
 ];
-export default function MyOrders() {
+export default function MyCart() {
   const classes = useStyles();
   const [cart, setCart] = useContext(CartContext);
   const [checked, setChecked] = React.useState(false);
@@ -91,10 +91,10 @@ export default function MyOrders() {
           <TableRow key='empty' ><TableCell colSpan={7} align="left"></TableCell></TableRow>
           <TableRow key='total' >
             <TableCell colSpan={2} align="left" className={classes.tf}>Total</TableCell>
-            <TableCell align="center" className={classes.tf}>550</TableCell>
-            <TableCell align="center" className={classes.tf}>$50</TableCell>
-            <TableCell align="center" className={classes.tf}>$50</TableCell>
-            <TableCell align="center" className={classes.tf}>$4500</TableCell>
+            <TableCell align="center" className={classes.tf}>250</TableCell>
+            <TableCell align="center" className={classes.tf}>$5</TableCell>
+            <TableCell align="center" className={classes.tf}>$40</TableCell>
+            <TableCell align="center" className={classes.tf}>$2500</TableCell>
           </TableRow>
 
         </TableBody>
