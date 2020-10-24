@@ -79,15 +79,15 @@ export default function Cart() {
         <Toolbar />
         <Breadcrumbs currentTitle="Cart" pageTitle="Cart" breadcrumbList={breadcrumbList} />
 
-<Grid container spacing={3}>
-  <Grid item xs={4}>
-    <Paper className={classes.paper} elevation={0}>
+<Grid container spacing={0}>
+  <Grid item xs={4} >
+    <Paper className={classes.paper} elevation={0} position="fixed">
     <MyDetails />
     </Paper>
   </Grid>
   <Grid item xs={8}>
-    <Paper className={classes.paper} elevation={0}>
-      <AppBar position="static" color="default">
+    <Paper className={classes.paper} elevation={1}>
+      <AppBar position="static" color="default" elevation={0}>
         <Tabs
           value={value}
           onChange={handleChange}
@@ -101,7 +101,7 @@ export default function Cart() {
           <Tab label="My Renewals" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
-        <TabPanel value={value} index={0} dir={theme.direction}>
+        <TabPanel value={value} index={0} dir={theme.direction} >
           <MyCart />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>

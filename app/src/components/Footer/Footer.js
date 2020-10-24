@@ -13,7 +13,7 @@ export default function Footer() {
     const classes = useStyles();
     return (
       <Paper className={classes.footer}>
-      <Typography align='center'>© 2020 sennovate All Rights Reserved.</Typography>
+      <Typography align='center' >© 2020 sennovate All Rights Reserved.</Typography>
       </Paper>
     );
 

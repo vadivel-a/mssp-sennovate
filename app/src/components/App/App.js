@@ -35,7 +35,7 @@ export default function App() {
         <Route exact path="/products/:categories/:categorie" render={props => <ProductsDetails productData = {data.categories} />} />
         <Route exact path="/cart" component={Cart} />
       </Switch>
-      <Footer />
+      <p></p>
     </Router>
     </CartProvider>
     </MuiThemeProvider>

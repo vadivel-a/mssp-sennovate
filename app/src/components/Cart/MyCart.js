@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     },
   },
   tf:{
-    fontWeight:'bold'    
+    fontWeight:'bold'
   },
   th:{
     height:'30px',
@@ -32,11 +32,14 @@ const useStyles = makeStyles({
   },
   tableCell: {
     flex: 1,
-  }  
+  }
 });
 
 const rows = [
   {'name':'SSO Oka','users':'100','monthly':'5','yearly':'','amount':'200'},
+  {'name':'Adaptive','users':'150','monthly':'','yearly':'40','amount':'2000'},
+  {'name':'Adaptive','users':'150','monthly':'','yearly':'40','amount':'2000'},
+  {'name':'Adaptive','users':'150','monthly':'','yearly':'40','amount':'2000'},
   {'name':'Adaptive','users':'150','monthly':'','yearly':'40','amount':'2000'}
 ];
 export default function MyCart() {
@@ -48,7 +51,7 @@ export default function MyCart() {
   };
 //console.log(cart);
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} elevation={0}>
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>

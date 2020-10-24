@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     },
   },
   tf:{
-    fontWeight:'bold'    
+    fontWeight:'bold'
   },
   th:{
     height:'30px',
@@ -32,7 +32,7 @@ const useStyles = makeStyles({
   },
   tableCell: {
     flex: 1,
-  }  
+  }
 });
 
 const rows = [
@@ -48,7 +48,7 @@ export default function MyOrders() {
   };
 //console.log(cart);
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} >
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>

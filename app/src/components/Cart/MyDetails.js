@@ -30,7 +30,7 @@ export default function MyDetails() {
   const classes = useStyles();
 
   return (
-      <Card className={classes.root} elevation={3}>
+      <Card className={classes.root} elevation={2}>
         <CardContent align="center">
             <Avatar className={classes.large}><img src={`images/categories/1.png`} width="60px" alt='logo' /></Avatar>
             <Typography variant="h5" >My company name</Typography>
