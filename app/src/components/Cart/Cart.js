@@ -1,9 +1,9 @@
-import React from 'react';
+import React,{useState} from 'react';
 import PropTypes from 'prop-types';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import {Grid,AppBar,Tabs,Tab,Paper} from '@material-ui/core';
+import {Grid,AppBar,Tabs,Tab,Paper,Button} from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
@@ -11,6 +11,8 @@ import MyCart from './MyCart';
 import MyOrders from './MyOrders';
 import MyRenewals from './MyRenewals';
 import MyDetails from './MyDetails';
+import SendMailModel from './SendMailModel';
+import {Link } from "react-router-dom";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -53,6 +55,17 @@ const useStyles = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
     padding: theme.spacing(2),
+  },
+  notes:{
+    padding:20,
+    marginTop:20,
+    textAlign:'center'
+  },
+  bottombutton:{
+    padding:20,
+    '& > *': {
+      margin: theme.spacing(1),
+    }
   }
 }));
 
@@ -60,6 +73,11 @@ export default function Cart() {
   const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
+  const [cartmodel, setCartmodel] = useState(false);
+
+  function cartModelclose(){
+    setCartmodel(false);
+  }
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -80,12 +98,12 @@ export default function Cart() {
         <Breadcrumbs currentTitle="Cart" pageTitle="Cart" breadcrumbList={breadcrumbList} />
 
 <Grid container spacing={0}>
-  <Grid item xs={4} >
-    <Paper className={classes.paper} elevation={0} position="fixed">
+  <Grid item xs={3} >
+    <Paper elevation={0} position="fixed">
     <MyDetails />
     </Paper>
   </Grid>
-  <Grid item xs={8}>
+  <Grid item xs={9}>
     <Paper className={classes.paper} elevation={1}>
       <AppBar position="static" color="default" elevation={0}>
         <Tabs
@@ -111,8 +129,22 @@ export default function Cart() {
           <MyRenewals />
         </TabPanel>
     </Paper>
+    <Paper className={[classes.paper,classes.notes]} elevation={0}>
+    <Typography variant="body1" component="p">
+      Thanks for you interest Sennovate Managed Security Services our representative will contact you shortly to provide best managed security services in Bay area
+    </Typography>
+    <div className={classes.bottombutton}>
+      <Link to={'/'}><Button variant="outlined" color="secondary">Continue to Products</Button></Link>
+      <Button variant="outlined" color="secondary" onClick={() => {setCartmodel(true);}}>e-Mail me a Copy of Selected Products</Button>
+    </div>
+    </Paper>
   </Grid>
 </Grid>
+
+{
+  cartmodel?<SendMailModel isopen={cartmodel} onCartModelclose={cartModelclose}  />:''
+}
+
 
       </main>
     </div>

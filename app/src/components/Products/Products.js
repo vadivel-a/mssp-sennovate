@@ -96,10 +96,8 @@ export default function Products(data) {
 
 
 <Grid container spacing={3}>
-
   <Grid item xs={6}>
     <Paper className={classes.paper}>
-
     <h3 className={classes.title}>SSO</h3>
     <Grid container spacing={3}>
     {

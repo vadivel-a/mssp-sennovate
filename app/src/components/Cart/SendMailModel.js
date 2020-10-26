@@ -6,10 +6,9 @@ import MuiDialogTitle from '@material-ui/core/DialogTitle';
 import MuiDialogContent from '@material-ui/core/DialogContent';
 import MuiDialogActions from '@material-ui/core/DialogActions';
 import IconButton from '@material-ui/core/IconButton';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import ShareIcon from '@material-ui/icons/Share';
 import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
-import {CartContext} from '../Context/CartContext';
 import {Link } from "react-router-dom";
 
 const styles = (theme) => ({
@@ -57,20 +56,10 @@ const DialogActions = withStyles((theme) => ({
   },
 }))(MuiDialogActions);
 
-export default function CartModel({isopen, onCartModelclose, data}) {
-  const [cart, setCart] = useContext(CartContext);
+export default function SendMailModel({isopen, onCartModelclose}) {
   const [open, setOpen] = React.useState(isopen);
-  const [usercount, setUsercount] = React.useState(1);
+  const [usermail, setUsermail] = React.useState(isopen);
   const [submit, setSubmit] = React.useState({});
-  const [renderdialogcontent, setRednerDialogContent] = React.useState();
-
-  const addToCart = ()=>{
-  	const item={name:data.name,price:data.price, type:data.type, user:usercount}
-  	setCart(curr=>[...curr, item]);
-    if(usercount > 0){
-      setRednerDialogContent(cartAddedDialogContent);
-    }
-  }
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -78,59 +67,36 @@ export default function CartModel({isopen, onCartModelclose, data}) {
     setOpen(false);
     onCartModelclose(false);
   };
-  useEffect(() => {
-    setRednerDialogContent(defaultDialogContent);
-  },[usercount]);
-  function defaultDialogContent(){
+
+  const handleSubmit = () => {
+
+  }
+
+  function renderdialogcontent(){
     return(
       <>
     <DialogContent dividers>
-      <Typography gutterBottom variant="h2">
-        ${data.price}
-      </Typography>
       <Typography gutterBottom variant="body2" >
-      Per User / Per {data.type}
+      Thanks for you interest Sennovate Managed Security Services our representative will contact you shortly to provide best managed security services in Bay area
       </Typography>
       <TextField
-        defaultValue='1'
         margin="dense"
-        id="no_user"
-        label="Number of user"
-        type="number"
+        id="mail"
+        label="Enter the mail"
+        type="mail"
         fullWidth
         color='secondary'
         style={{'max-width':'200px','width':'100%'}}
-        onChange={(e) => {setUsercount(e.target.value);}}
+        onChange={(e) => {setUsermail(e.target.value);}}
       />
     </DialogContent>
     <DialogActions >
       <Button onClick={handleClose} color="secondary" variant="outlined">
         Cancel
       </Button>
-      <Button onClick={addToCart} color="secondary" variant="outlined">
-        <ShoppingCartIcon />Add Cart
+      <Button onClick={handleSubmit} color="secondary" variant="outlined">
+        <ShareIcon />Share
       </Button>
-    </DialogActions>
-    </>
-    )
-  }
-  const cartAddedDialogContent=()=>{
-    return(
-    <>
-    <DialogContent dividers>
-      <Typography gutterBottom variant="h2" style={{'fontSize':'2.75rem'}}>
-        {usercount} Users added to cart!
-      </Typography>
-    </DialogContent>
-    <DialogActions >
-      <Button onClick={handleClose} color="secondary" variant="outlined">
-        Continue to Products
-      </Button>
-      <Link to={'/cart'} >
-      <Button color="secondary" variant="outlined" component="button">
-        Proceed to Cart
-      </Button>
-      </Link>
     </DialogActions>
     </>
     )
@@ -145,9 +111,9 @@ export default function CartModel({isopen, onCartModelclose, data}) {
         align='center'
         maxWidth='xs'>
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-          {data.name} / Per {data.type}
+          Share to me!
         </DialogTitle>
-        {renderdialogcontent}
+        {renderdialogcontent()}
       </Dialog>
     </div>
   );
