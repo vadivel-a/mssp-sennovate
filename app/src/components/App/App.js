@@ -9,6 +9,7 @@ import Cart from '../Cart/Cart';
 import {MuiThemeProvider, createMuiTheme  } from '@material-ui/core/styles';
 import {CartProvider} from '../Context/CartContext';
 import MyDetails from '../MyDetails/MyDetails';
+import ProductSearch from '../ProductSearch/ProductSearch';
 import {
   BrowserRouter as Router,
   Switch,
@@ -36,6 +37,7 @@ export default function App() {
         <Route exact path="/products/:categories/:categorie" render={props => <ProductsDetails productData = {data.categories} />} />
         <Route exact path="/cart" component={Cart} />
         <Route exact path="/mydetails" component={MyDetails} />
+        <Route exact path="/product-search" component={ProductSearch} />
       </Switch>
       <p></p>
     </Router>
