@@ -3,6 +3,8 @@ import data from './MsspData.json';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Home from '../Home/Home';
+import Login from '../Login/Login';
+import Signup from '../Signup/Signup';
 import Products from '../Products/Products';
 import ProductsDetails from '../Products/ProductsDetails';
 import Cart from '../Cart/Cart';
@@ -22,7 +24,8 @@ const theme = createMuiTheme({
       main: '#fff'
     },
     secondary:{
-      main:'#62E509'
+      main:'#62E509',
+      contrastText: '#fff'
     }
   }
 });
@@ -33,6 +36,8 @@ export default function App() {
     <Router>
     <Header />
       <Switch>
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/Signup" component={Signup} />
         <Route exact path="/" render={props => <Home productData = {data.categories} />} />
         <Route exact path="/products/:categories" render={props => <Products productData = {data.categories} />} />
         <Route exact path="/products/:categories/:categorie" render={props => <ProductsDetails productData = {data.categories} />} />
